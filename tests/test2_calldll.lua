@@ -14,6 +14,9 @@ if luacdll ~= nil then
     info = 'MultAllNumbers(6, 3, "23423", {2.17}, 1.1) = ' .. tostring(r) .. "\n"
     print(info)
 
+    -- New API
+    luacdll.ShowMsg(_VERSION)
+
 else
     print("Failed to load the DLL")
 end
